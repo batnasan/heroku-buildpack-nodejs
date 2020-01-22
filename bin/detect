@@ -22,14 +22,14 @@ error() {
 }
 
 if [ -f $1/$erxes_ui_dir/package.json ]; then
-  echo "erxes ui app detected" && exit 0
+  echo "erxes ui app detected!" && exit 0
 else
-  echo "no erxes ui app detected" | error && exit 1
+  echo "no erxes ui app detected!" | error && exit 1
 fi
 
 if [ -f $1/$erxes_widgets_dir/package.json ]; then
-  echo "erxes widgets app detected" && exit 0
+  echo "erxes widgets app detected!" && exit 0
 else
-  echo "no erxes widgets app detected" | error && exit 1
+  echo "no erxes widgets app detected!" | error && exit 1
 fi
 
